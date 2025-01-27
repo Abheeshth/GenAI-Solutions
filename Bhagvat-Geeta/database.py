@@ -3,6 +3,7 @@ from langchain_text_splitters import CharacterTextSplitter
 import os
 from langchain_openai import OpenAIEmbeddings
 from langchain_community.vectorstores import FAISS
+from api_key import api_key 
 #from langchain.memory import ConversationBufferMemory
 #from langchain.chains import ConversationalRetrievalChain
 #from langchain_openai import ChatOpenAI
@@ -42,7 +43,7 @@ print(len(texts))
 
 
 # Set your OpenAI API key
-api_key = "sk-proj-zy8GjcMAc03HW73V8i4ET3BlbkFJbpmBd4ECj0FpLQcC59YF"
+api_key = api_key
 os.environ["OPENAI_API_KEY"] = api_key
 
 db_faiss_path = os.path.join('db_faiss')
