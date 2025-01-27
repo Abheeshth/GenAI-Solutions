@@ -1,0 +1,7 @@
+odfpy
+langchain-text-splitters
+langchain_community faiss-cpu
+langchain-core
+langchain-openai
+chainlit
+openai
